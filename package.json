@@ -1,0 +1,20 @@
+{
+  "name": "typescript-compiler-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "minimal-compiler": "ts-node ./minimal-compiler.ts ./minimal-compiler.ts",
+    "transpile": "ts-node ./transpile.ts",
+    "dts": "ts-node ./dts.ts test/source.js",
+    "jsdoc": "ts-node ./extract-jsdoc.ts ./extract-jsdoc.ts extract"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
