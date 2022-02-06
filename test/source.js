@@ -1,15 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Hello = exports.concat = exports.add = void 0;
-var a = 5;
-var b = 6;
-var add = function (x, y) { return x + y; };
+let a = 5;
+let b = 6;
+const add = (x, y) => x + y;
 exports.add = add;
-var concat = function (x, y) { return x + y; };
+const concat = (x, y) => x + y;
 exports.concat = concat;
-var Hello = /** @class */ (function () {
-    function Hello() {
+class Hello {
+    constructor() {
+        this.word = x => x;
     }
-    return Hello;
-}());
+}
 exports.Hello = Hello;
+if (a != b)
+    console.log('not equal');

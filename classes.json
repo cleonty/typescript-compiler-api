@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Hello",
+        "documentation": "",
+        "type": "typeof Hello",
+        "constructors": [
+            {
+                "parameters": [],
+                "returnType": "Hello",
+                "documentation": ""
+            }
+        ]
+    }
+]

@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "minimal-compiler": "ts-node ./minimal-compiler.ts ./minimal-compiler.ts",
-    "transpile": "ts-node ./transpile.ts",
-    "dts": "ts-node ./dts.ts test/source.js",
-    "jsdoc": "ts-node ./extract-jsdoc.ts ./extract-jsdoc.ts extract"
+    "compile": "ts-node ./src/minimal-compiler.ts ./test/source.ts",
+    "transpile": "ts-node ./src/transpile.ts",
+    "dts": "ts-node ./src/dts.ts test/source.js",
+    "jsdoc": "ts-node ./src/extract-jsdoc.ts ./extract-jsdoc.ts extract",
+    "lint": "ts-node ./src/linter.ts ./test/source.ts ./test/source.js",
+    "watch": "ts-node ./src/watcher.ts",
+    "watch-ls": "ts-node ./src/language-service.ts",
+    "ast": "ts-node ./src/ast.ts",
+    "doc": "ts-node ./src/doc-gen.ts ./test/source.ts"
   },
   "keywords": [],
   "author": "",
